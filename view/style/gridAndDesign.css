@@ -1,0 +1,24 @@
+
+/* this file will have the main properties such as color, backgrounds, and grid displacement */
+
+.body {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgb(204, 203, 255);
+    padding: 1em;
+}
+
+.main {
+    background-color: rgb(236, 235, 245);
+}
+
+.footer {
+    background-color: rgb(204, 203, 255);
+    text-align: center;
+    padding: 1em;
+}
