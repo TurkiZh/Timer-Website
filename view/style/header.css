@@ -1,0 +1,34 @@
+header > .inline {
+    justify-content: center;
+}
+
+.headerTitle {
+    font-size: 35px;
+    cursor: default;
+}
+
+.inline {
+    display: inline;
+    margin: 30px;
+}
+
+.headerButton, .changeMode {
+    background-color: rgb(35, 39, 61);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    height: 6vh;
+    border-radius: 100px;
+}
+
+.headerButton {
+    width: 10vw;
+}
+.changeMode {
+    width: 7vw;
+}
+
+.headerButton:hover, .changeMode:hover{
+    background-color: rgb(246, 177, 122);
+}

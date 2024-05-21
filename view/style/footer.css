@@ -1,0 +1,12 @@
+.footerMessage {
+    cursor: default;
+}
+
+.links {
+    color:  white;
+    text-decoration: none;
+}
+
+.links:hover {
+    font-weight: bolder;
+}
