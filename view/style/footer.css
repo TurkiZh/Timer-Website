@@ -1,12 +1,23 @@
 .footerMessage {
     cursor: default;
+    display: block;
+}
+
+.socialsBlock {
+    display: inline-flex;
+}
+
+.socials {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .links {
-    color:  white;
+    color: white;
     text-decoration: none;
 }
 
 .links:hover {
-    font-weight: bolder;
+    color: rgb(255, 154, 72);
 }
+

@@ -1,10 +1,7 @@
-header > .inline {
-    justify-content: center;
-}
-
 .headerTitle {
     font-size: 35px;
     cursor: default;
+
 }
 
 .inline {
@@ -15,20 +12,34 @@ header > .inline {
 .headerButton, .changeMode {
     background-color: rgb(35, 39, 61);
     color: white;
-    font-size: 20px;
+    font-size: 2vh;
     border: none;
     cursor: pointer;
+    display: inline-flex;
     height: 6vh;
     border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 .headerButton {
     width: 10vw;
 }
 .changeMode {
-    width: 7vw;
+    width: 3vw;
 }
 
 .headerButton:hover, .changeMode:hover{
-    background-color: rgb(246, 177, 122);
+    background-color: rgb(255, 154, 72);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+.headerButton:focus{
+    background-color: rgb(255, 154, 72);
+    box-shadow: 0 0 5px 10px rgba(0,0,0,0.24);
+}
+
+.headerLogo {
+    margin-right: 3%;
 }
