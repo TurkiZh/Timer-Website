@@ -66,7 +66,6 @@
 }
 
 .startButton > .front {
-    display: block;
     height: 8vh;
     width: 8vh;
     display: flex;
@@ -79,7 +78,6 @@
 }
 
 .resetButton > .front {
-    display: block;
     height: 8vh;
     width: 8vh;
     display: flex;

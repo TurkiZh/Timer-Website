@@ -10,7 +10,7 @@
 }
 
 .headerButton, .changeMode {
-    background-color: rgb(35, 39, 61);
+    background-color: rgb(28, 31, 46);
     color: white;
     font-size: 2vh;
     border: none;
@@ -20,9 +20,9 @@
     border-radius: 100px;
     align-items: center;
     justify-content: center;
-    padding: 5px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.44);
-
+    outline-offset: 4px;
+    padding: 0;
 }
 
 .headerButton {
@@ -33,14 +33,36 @@
 }
 
 .headerButton:hover, .changeMode:hover{
-    background-color: rgb(255, 154, 72);
+    background-color: rgb(212, 136, 74);
 }
 
 .headerButton:active, .changeMode:active{
-    background-color: rgb(253, 147, 60);
-    transform: translateY(2px);
+    background-color: rgb(197, 112, 43);
 }
 
 .headerLogo {
     margin-right: 3%;
+}
+
+.headerButton > .front:hover , .changeMode > .front:hover {
+    transform: translateY(-3px);
+    background-color: rgb(253, 162, 88);
+}
+
+.headerButton > .front:active , .changeMode > .front:active {
+    transform: translateY(-3px);
+    background-color: rgb(248, 140, 52);
+}
+
+.headerButton > .front {
+    height: 6vh;
+    width: 10vw;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(35, 39, 61);
+    color: white;
+    transform: translateY(-6px);
 }
