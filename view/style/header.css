@@ -21,6 +21,8 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.44);
+
 }
 
 .headerButton {
@@ -32,12 +34,11 @@
 
 .headerButton:hover, .changeMode:hover{
     background-color: rgb(255, 154, 72);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 
-.headerButton:focus{
-    background-color: rgb(255, 154, 72);
-    box-shadow: 0 0 5px 10px rgba(0,0,0,0.24);
+.headerButton:active, .changeMode:active{
+    background-color: rgb(253, 147, 60);
+    transform: translateY(2px);
 }
 
 .headerLogo {
