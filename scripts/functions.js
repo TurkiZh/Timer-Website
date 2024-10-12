@@ -58,11 +58,17 @@ function changeTimerTitle(title) {
 }
 
 function colorHeaderPressedButton(newColoredButton) {
-    document.getElementById("stopwatch").style.setProperty("background-color", "rgb(35, 39, 61)");
-    document.getElementById("countdown").style.setProperty("background-color", "rgb(35, 39, 61)");
-    document.getElementById("currentTime").style.setProperty("background-color", "rgb(35, 39, 61)");
+    document.getElementById("stopwatchFront").style.setProperty("background-color", "rgb(35, 39, 61)");
+    document.getElementById("countdownFront").style.setProperty("background-color", "rgb(35, 39, 61)");
+    document.getElementById("currentTimeFront").style.setProperty("background-color", "rgb(35, 39, 61)");
 
-    document.getElementById(newColoredButton).style.setProperty("background-color", "rgb(253, 147, 60)")
+    document.getElementById("stopwatch").style.setProperty("background-color", "rgb(28, 31, 46)");
+    document.getElementById("countdown").style.setProperty("background-color", "rgb(28, 31, 46)");
+    document.getElementById("currentTime").style.setProperty("background-color", "rgb(28, 31, 46)");
+
+    document.getElementById(newColoredButton).style.setProperty("background-color", "rgb(197, 112, 43)")
+    document.getElementById(newColoredButton+"Front").style.setProperty("background-color", "rgb(253, 147, 60)")
+
 }
 
 function disableTimerButtons() {
