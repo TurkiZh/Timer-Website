@@ -38,7 +38,7 @@
     transform: translateY(-3px);
 }
 
-.headerButton > .front {
+.headerButton > .front , .changeMode > .front{
     font-size: 18px;
     height: 6vh;
     width: 12vw;

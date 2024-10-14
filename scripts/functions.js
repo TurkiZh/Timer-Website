@@ -6,16 +6,19 @@ function loadpage(){
 // variables
 
 let timerId
+let stopwatch = true
+let elapsedPausedTime = 0
 
 //
 // stopwatch button functions
 //
 function stopWatch() {
     clearInterval(timerId)
+    stopwatch = true
     enableTimerButtons();
     changeTimerTitle("Stop Watch");
     colorHeaderPressedButton("stopwatch");
-    document.getElementById("time").innerHTML = "00:00:00.0"
+    document.getElementById("time").innerHTML = "00:00:00"
 }
 
 //
@@ -23,10 +26,11 @@ function stopWatch() {
 //
 function countdown() {
     clearInterval(timerId)
+    stopwatch = false
     enableTimerButtons();
     changeTimerTitle("Count Down");
     colorHeaderPressedButton("countdown");
-    document.getElementById("time").innerHTML = "00:00:00.0"
+    document.getElementById("time").innerHTML = "00:00:00"
 }
 
 //
@@ -82,7 +86,33 @@ function enableTimerButtons() {
 }
 
 //
-// DARK/LIGHT modes functions
+// Start/pause/stop  functions
 //
 
+function start() {
+    if (stopwatch){
+        let startTime = new Date().getTime() - elapsedPausedTime;
+        timerId.setInterval(updateStopwatch, 1000)
+    }
+    else
+        timerId.setInterval()
+}
 
+function updateStopwatch() {
+    var currentTime = new Date().getTime(); // get current time in milliseconds
+    var elapsedTime = currentTime; // calculate elapsed time in milliseconds
+    var seconds = Math.floor(elapsedTime / 1000) % 60; // calculate seconds
+    var minutes = Math.floor(elapsedTime / 1000 / 60) % 60; // calculate minutes
+    var hours = Math.floor(elapsedTime / 1000 / 60 / 60); // calculate hours
+    var displayTime = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds); // format display time
+    document.getElementById("time").innerHTML = displayTime;
+}
+
+function pad(number) {
+    // add a leading zero if the number is less than 10
+    return (number < 10 ? "0" : "") + number;
+}
+
+//
+// DARK/LIGHT modes functions
+//
